@@ -19,3 +19,13 @@ h5 {
 p {
   font-weight: 300;
 }
+
+.Toastify__toast-body {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.Toastify__toast-icon svg {
+  fill: rgb(255,107, 0)
+}

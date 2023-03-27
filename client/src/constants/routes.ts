@@ -1,6 +1,6 @@
 const PATHS = {
   HOME: "/",
-  STUDENT_PROFILE: "/student-profile/:id",
+  USER_FORM: "/user-form/:mode",
   INVALID: "/invalid",
 };
 

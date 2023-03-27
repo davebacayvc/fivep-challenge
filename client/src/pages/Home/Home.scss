@@ -1,0 +1,20 @@
+.home-wrapper{
+    .table-actions {
+        button {
+            margin: 0 .1rem;
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+        }
+    }
+
+    .page-actions {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+
+        input {
+            padding: .3rem .5rem;
+            border: 1px solid #eee;
+        }
+    }
+}

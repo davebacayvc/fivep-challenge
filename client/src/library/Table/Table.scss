@@ -1,0 +1,118 @@
+$solid-orange: rgb(255,107, 0);
+$light-orange: rgb(241, 148, 80);
+
+.table-container {
+  input[type="text"] {
+    width: 100%;
+    text-align: center;
+    border: none;
+    font-size: 4rem;
+    outline: 0;
+    margin-bottom: 1rem;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+
+    td,
+    th {
+      border: 1px solid #fff;
+      padding: 8px;
+      font-size: 2rem;
+    }
+    th.sort {
+      cursor: pointer;
+    }
+    td.link {
+      cursor: pointer;
+    }
+
+    tr {
+      background-color: #fff;
+    }
+    tr:nth-child(even) {
+      background-color: #eee;
+    }
+
+    tr:hover {
+      background-color: #ddd;
+    }
+
+    th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      background-color: $solid-orange;
+      color: white;
+      font-size: 1.5rem;
+    }
+    td {
+      font-size: 1.3rem;
+    }
+
+    img {
+      width: 60px;
+      margin: auto;
+      display: block;
+    }
+    .sort-icon {
+      position: relative;
+      top: 2px;
+      margin-left: 1rem;
+      background-color: transparent;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    .th-head {
+      position: relative;
+
+      .hover-instruction {
+        font-size: 1.2rem;
+        border-bottom: 1px dotted #fff;
+        color: #fff;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 0px 0;
+        z-index: 1;
+        top: 0;
+        width: 100%;
+        left: 0;
+        height: 200px;
+        text-align: left;
+        overflow: auto;
+
+        .link {
+          font-size: 1.2rem;
+          margin: 0.3rem 0;
+          padding-left: 5px;
+          display: block;
+          border: none;
+          background-color: transparent;
+          text-align: left;
+          color: #fff;
+          border-bottom: 1px dotted #fff;
+          width: 100%;
+
+          &:hover {
+            opacity: 0.5;
+            cursor: pointer;
+          }
+        }
+      }
+
+      &:hover .dropdown-content {
+        display: block;
+      }
+    }
+  }
+}
